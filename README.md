@@ -10,6 +10,8 @@ dotnet restore SweetPi.sln
 dotnet watch --project ./src/SweetPi.Api/SweetPi.Api.csproj run
 ```
 
+* [Deploy .NET apps to Raspberry Pi](https://docs.microsoft.com/en-us/dotnet/iot/deployment)
+
 ## End Points
 
 ### leds
