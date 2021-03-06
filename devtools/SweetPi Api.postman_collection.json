@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "ca55b96c-c11a-4174-bea0-70bbd47cbba8",
+		"name": "SweetPi Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "leds",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ledModel",
+							"value": "{\n    \"Pin\": \"18\",\n    \"LedState\": \"On\"\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/leds",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"leds"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
