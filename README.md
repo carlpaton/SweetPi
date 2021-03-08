@@ -20,7 +20,7 @@ ufw allow in from any to any port 5001
 
 ### Postman Collection
 
-* [Postman Collection]("./devtools/SweetPi%20Api.postman_collection.json")
+* [Postman Collection](https://github.com/carlpaton/SweetPi/blob/main/devtools/SweetPi%20Api.postman_collection.json)
 
 ### Install .Net Core
 
