@@ -39,6 +39,39 @@
 			"response": []
 		},
 		{
+			"name": "leds (localhost)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ledModel",
+							"value": "{\n    \"Pin\": \"18\",\n    \"State\": \"On\"\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost.:5001/leds",
+					"protocol": "http",
+					"host": [
+						"localhost",
+						""
+					],
+					"port": "5001",
+					"path": [
+						"leds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "ping",
 			"request": {
 				"auth": {

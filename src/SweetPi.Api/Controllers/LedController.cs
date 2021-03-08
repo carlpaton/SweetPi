@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SweetPi.Api.Models;
 using SweetPi.Application.Common.Interfaces;
+using System;
 
 namespace SweetPi.Api.Controllers
 {
@@ -18,6 +19,8 @@ namespace SweetPi.Api.Controllers
         [HttpPost("/leds")]
         public ActionResult<LedModel> SetLed([FromForm] LedModel ledModel) 
         {
+            Console.WriteLine("ledModel Pin:{0} State:{1}", ledModel.Pin, ledModel.State);
+
             var domainModel = new Domain.Models.LedModel()
             {
                 Pin = ledModel.Pin,
