@@ -1,0 +1,47 @@
+Steps to get .Net core to run on a Raspberry Pi
+
+1. Install
+2. Check environment variable PATH
+
+echo $PATH
+
+3. Edit PATH in [~/.bashrc] file
+
+sudo nano ~/.bashrc
+
+3.1. Add
+
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+export PATH="$PATH:/home/pi/.dotnet/tools"
+
+4. reload the [~/.bashrc] file 
+
+source ~/.bashrc
+
+
+https://elbruno.com/2020/01/05/raspberrypi-how-to-solve-dotnet-core-not-recognized-after-reboot/
+
+---------
+dotnet --info
+
+echo $0
+expect `bash`
+
+sudo apt-get update
+sudo apt-get upgrade
+
+
+wget https://download.visualstudio.microsoft.com/download/pr/349f13f0-400e-476c-ba10-fe284b35b932/44a5863469051c5cf103129f1423ddb8/dotnet-sdk-3.1.102-linux-arm.tar.gz
+wget https://download.visualstudio.microsoft.com/download/pr/8ccacf09-e5eb-481b-a407-2398b08ac6ac/1cef921566cb9d1ca8c742c9c26a521c/aspnetcore-runtime-3.1.2-linux-arm.tar.gz
+
+mkdir dotnet-arm32
+tar zxf dotnet-sdk-3.1.102-linux-arm.tar.gz -C $HOME/Downloads/dotnet-arm32
+tar zxf aspnetcore-runtime-3.1.2-linux-arm.tar.gz -C $HOME/Downloads/dotnet-arm32
+
+
+export DOTNET_ROOT=$HOME/Downloads/dotnet-arm32
+export PATH=$PATH:$HOME/Downloads/dotnet-arm32
+
+
+https://edi.wang/post/2019/9/29/setup-net-core-30-runtime-and-sdk-on-raspberry-pi-4
