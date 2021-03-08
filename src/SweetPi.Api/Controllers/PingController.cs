@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace SweetPi.Api.Controllers
 {
@@ -7,7 +8,7 @@ namespace SweetPi.Api.Controllers
         [HttpGet("/ping")]
         public IActionResult Get()
         {
-            return Ok("SweetPi.Api is running...");
+            return Ok($"SweetPi.Api is running... {DateTime.Now}");
         }
     }
 }
