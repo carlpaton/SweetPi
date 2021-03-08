@@ -36,6 +36,28 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "ping",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node1:5001/ping",
+					"protocol": "https",
+					"host": [
+						"node1"
+					],
+					"port": "5001",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
