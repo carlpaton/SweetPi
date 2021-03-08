@@ -12,7 +12,7 @@ namespace SweetPi.Infrastructure.Repositories
         {
             // GPIO pins - https://carlpaton.github.io/2019/12/pi-resources/
             // TODO : Having this state will allow the context to be shared but Im not sure what that will look like for unit tests?
-            // TODO : Consider `PinNumberingScheme` for Logical/Board - logical pin numbering scheme is default
+            // TODO : Consider `PinNumberingScheme` for Logical pin OR Board GPIO number (logical pin numbering scheme is default)
             _context = new GpioController();
         }
 

@@ -15,7 +15,6 @@ namespace SweetPi.Application.Services
 
         public void HandleRequest(LedModel ledModel)
         {
-            // TODO - what if the pin is already open?
             _repository.OpenPinForOutPut(ledModel.Pin);
 
             switch (ledModel.State)
