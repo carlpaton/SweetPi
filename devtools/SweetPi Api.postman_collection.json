@@ -18,7 +18,7 @@
 					"formdata": [
 						{
 							"key": "ledModel",
-							"value": "{\n    \"Pin\": \"18\",\n    \"LedState\": \"On\"\n  }",
+							"value": "{\n    \"Pin\": \"18\",\n    \"State\": \"On\"\n  }",
 							"type": "text"
 						}
 					]
