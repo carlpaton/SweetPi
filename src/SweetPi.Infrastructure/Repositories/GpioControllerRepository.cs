@@ -1,4 +1,5 @@
 ﻿using SweetPi.Domain.Interfaces;
+using System;
 using System.Device.Gpio;
 
 namespace SweetPi.Infrastructure.Repositories
@@ -17,7 +18,15 @@ namespace SweetPi.Infrastructure.Repositories
 
         public void OpenPinForOutPut(int pin)
         {
-            _context.OpenPin(pin, PinMode.Output);
+            if (!_context.IsPinOpen(pin))
+            {
+                _context.OpenPin(pin, PinMode.Output);
+                Console.WriteLine("OpenPin {0}", pin);
+            }
+            else 
+            {
+                Console.WriteLine("Pin {0} is already open", pin);
+            }
         }
 
         public void WriteHigh(int pin)
