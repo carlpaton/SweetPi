@@ -24,11 +24,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://node1.:5001/leds",
+					"raw": "http://node1:5001/leds",
 					"protocol": "http",
 					"host": [
-						"node1",
-						""
+						"node1"
 					],
 					"port": "5001",
 					"path": [
@@ -47,11 +46,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://node1.:5001/ping",
+					"raw": "http://node1:5001/ping",
 					"protocol": "http",
 					"host": [
-						"node1",
-						""
+						"node1"
 					],
 					"port": "5001",
 					"path": [
