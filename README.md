@@ -1,4 +1,5 @@
 ## SweetPi
+
 Having a hoon with .Net Core on Raspberry Pi - http://carlpaton.github.io/2021/03/dot-net-core-paspberry-pi/
 
 ### End Points
@@ -11,7 +12,7 @@ Having a hoon with .Net Core on Raspberry Pi - http://carlpaton.github.io/2021/0
 
 ### Run sweetpi on pi
 
-Run and make code changes
+Run and make code changes after cloning this code base.
 
 ```
 dotnet restore SweetPi.sln
@@ -24,11 +25,3 @@ Publish and run
 dotnet publish "./src/SweetPi.Api/SweetPi.Api.csproj" --configuration Release --output ./published --no-restore
 dotnet ./published/SweetPi.Api.dll
 ```
-
-### References
-
-* https://docs.microsoft.com/en-us/dotnet/iot/deployment
-* https://dotnet.microsoft.com/download
-* https://www.raspberrypi.org/blog/visual-studio-code-comes-to-raspberry-pi/
-* https://edi.wang/post/2019/9/29/setup-net-core-30-runtime-and-sdk-on-raspberry-pi-4
-* https://elbruno.com/2020/01/05/raspberrypi-how-to-solve-dotnet-core-not-recognized-after-reboot/
